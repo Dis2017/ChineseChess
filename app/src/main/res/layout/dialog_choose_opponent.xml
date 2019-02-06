@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/choose_opponent_ok_btn"
+        android:background="@drawable/btn_bg_slc"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/ok"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/choose_opponent_cancel_btn"
+        android:background="@drawable/btn_bg_slc"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/choose_opponent_ok_btn"
+        android:layout_centerHorizontal="true"
+        android:text="@string/cancel"
+        android:textSize="20sp"
+        android:textColor="@android:color/black" />
+
+    <LinearLayout
+        android:id="@+id/choose_opponent_self_box_ll"
+        android:layout_margin="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/choose_opponent_self_text_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/self"
+            android:textSize="25sp"
+            android:textColor="@android:color/holo_green_light"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/choose_opponent_self_ip_text_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/ip"
+                android:textSize="20sp"
+                android:textColor="@android:color/holo_green_light"/>
+
+            <TextView
+                android:id="@+id/choose_opponent_self_ip_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textSize="20sp"
+                android:textColor="@android:color/holo_green_light" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/choose_opponent_self_port_text_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/port"
+                android:textSize="20sp"
+                android:textColor="@android:color/holo_green_light" />
+
+            <TextView
+                android:id="@+id/choose_opponent_self_port_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textColor="@android:color/holo_green_light"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/choose_opponent_vs_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choose_opponent_self_box_ll"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="35dp"
+        android:text="@string/vs"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="46sp" />
+
+    <LinearLayout
+        android:id="@+id/choose_opponent_opponent_box_ll"
+        android:layout_margin="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choose_opponent_vs_tv"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/choose_opponent_opponent_text_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/opponent"
+            android:textSize="25sp"
+            android:textColor="@android:color/holo_blue_light"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/choose_opponent_opponent_ip_text_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/ip"
+                android:textSize="20sp"
+                android:textColor="@android:color/holo_blue_light" />
+
+            <TextView
+                android:id="@+id/choose_opponent_opponent_ip_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textSize="20sp"
+                android:textColor="@android:color/holo_blue_light" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/choose_opponent_opponent_port_text_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/port"
+                android:textSize="20sp"
+                android:textColor="@android:color/holo_blue_light" />
+
+            <TextView
+                android:id="@+id/choose_opponent_opponent_port_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textSize="20sp"
+                android:textColor="@android:color/holo_blue_light"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
